@@ -8,35 +8,53 @@
   <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    
-    
-    
 <!---------------------------------------------------------------------------------------------->
     <div class="container">
-        <button type="Open" class = "btn" onclick="openPopup()">
-            <img src="Image/p1.png" height= "30">
+        <button type="Open" class = "btn" onclick="openPopup('popup1')">
+            <img src="Image/p6.PNG" height= "50">
         </button>
-        <div class="popup" id="popup">
+        <div class="popup" id="popup1">
+            <img src="Image/logo.PNG" height = "60">
+            <h2>LOT - P</h2>
+            <p>Transponders : <span>40</span>&nbsp;/&nbsp;<span>40</span> <span style="color: red;background-color: black;">CLOSED</span></p>
+            <p>Visitors : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3</span>&nbsp;/&nbsp;<span>20</span> <span style="color: green;background-color: black;">OPEN</span></p>
+           
+            <a class="close" href="#" onclick="closePopup('popup1')">×</a>
+            <button type = "direction" onclick="window.open('https://goo.gl/maps/vjNaJmNHzxBzh6ta7', '_blank');"><img src="Image/map.PNG" height= "20">Directions</button>
+        </div>
+
+
+        <button type="Open2" class = "btn" onclick="openPopup('popup2')">
+            <img src="Image/p6.PNG" height= "50">
+        </button>
+        <div class="popup" id="popup2">
+            <img src="Image/logo.PNG" height = "60">
+            <h2>LOT - M</h2>
+            <p>Transponders : <span>4</span>&nbsp;/&nbsp;<span>10</span> <span style="color: green;background-color: black;">OPEN</span></p>
+            <p>Visitors : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>15</span>&nbsp;/&nbsp;<span>15</span> <span style="color: red;background-color: black;">CLOSED</span></p>
+            <a class="close" href="#" onclick="closePopup('popup2')">×</a>
+            <button type = "direction" onclick="window.open('https://goo.gl/maps/uLi4hMVoQZhy1BAu6', '_blank');"><img src="Image/map.PNG" height= "20">Directions</button>
+        </div>
+
+
+        <button type="Open3" class = "btn" onclick="openPopup('popup3')">
+            <img src="Image/p6.PNG" height= "50">
+        </button>
+        <div class="popup" id="popup3">
             <img src="Image/logo.PNG" height = "60">
             <h2>LOT - I</h2>
-            <p>Visitor : <br> Transponders : </p>
-            <button type = "button" onclick="closePopup()">OK</button>
+            <p>Transponders : <span>4</span>&nbsp;/&nbsp;<span>40</span> <span style="color: green;background-color: black;">OPEN</span></p>
+            <p>Visitors : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>3</span>&nbsp;/&nbsp;<span>20</span> <span style="color: green;background-color: black;">OPEN</span></p>
+            <a class="close" href="#" onclick="closePopup('popup3')">×</a>
+            <button type = "direction" onclick="window.open('https://goo.gl/maps/5RQZGZibXNinRjzK7', '_blank');"><img src="Image/map.PNG" height= "20">Directions</button>
         </div>
 
     </div>
 
-<script>
-let popup = document.getElementById("popup");
-
-function openPopup(){
-    popup.classList.add("open-popup");
-}
-
-function closePopup(){
-    popup.classList.remove("open-popup");
-}
-</script>
+    <script src="main.js"></script>
   
 </body>
 </html>
+
+
 
